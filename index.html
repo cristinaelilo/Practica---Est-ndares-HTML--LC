@@ -94,7 +94,95 @@
             </table>
         </section>
 
-        
+        <section id="pedido">
+            <h2>Realiza tu pedido</h2>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>Datos del cliente</legend>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"
+                           minlength="3" required>
+
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo"
+                           required>
+
+                    <label for="telefono">Celular:</label>
+                    <input type="tel" id="telefono" name="telefono"
+                           pattern="09[0-9]{8}" placeholder="0991234567"
+                           title="Ingresa 10 dígitos que comiencen con 09"
+                           required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tamaño de la bebida</legend>
+
+                    <input type="radio" id="pequeno" name="tamano"
+                           value="pequeno" required>
+                    <label for="pequeno">Pequeño</label>
+
+                    <input type="radio" id="mediano" name="tamano"
+                           value="mediano">
+                    <label for="mediano">Mediano</label>
+
+                    <input type="radio" id="grande" name="tamano"
+                           value="grande">
+                    <label for="grande">Grande</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ingredientes adicionales</legend>
+
+                    <input type="checkbox" id="leche" name="adicionales"
+                           value="leche">
+                    <label for="leche">Leche vegetal</label>
+
+                    <input type="checkbox" id="canela" name="adicionales"
+                           value="canela">
+                    <label for="canela">Canela</label>
+
+                    <input type="checkbox" id="crema" name="adicionales"
+                           value="crema">
+                    <label for="crema">Crema batida</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles del pedido</legend>
+
+                    <label for="producto">Producto:</label>
+                    <select id="producto" name="producto" required>
+                        <option value="">Selecciona un producto</option>
+                        <option value="americano">Café americano</option>
+                        <option value="capuchino">Capuchino</option>
+                        <option value="chocolate">Chocolate caliente</option>
+                        <option value="brownie">Brownie</option>
+                    </select>
+
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad"
+                           min="1" max="10" value="1" required>
+
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios"
+                              rows="3" maxlength="300"></textarea>
+                </fieldset>
+
+                <button type="submit">Enviar pedido</button>
+                <button type="reset">Limpiar</button>
+
+            </form>
+        </section>
+
+        <aside>
+            <h2>Promoción de la semana</h2>
+            <p>Disfruta de un capuchino con un brownie.</p>
+        </aside>
 
     </main>
 
