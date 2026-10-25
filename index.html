@@ -153,17 +153,20 @@
 
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre"
-                           minlength="3" required>
+                           minlength="3" placeholder="Escribe tu nombre" required>
+                    <small>Escribe tu nombre con al menos 3 caracteres.</small>
 
                     <label for="correo">Correo:</label>
                     <input type="email" id="correo" name="correo"
-                           required>
+                           placeholder="ejemplo@gmail.com" required>
+                    <small>Ingresa tu correo electrónico.</small>
 
                     <label for="telefono">Celular:</label>
                     <input type="tel" id="telefono" name="telefono"
                            pattern="09[0-9]{8}" placeholder="0991234567"
                            title="Ingresa 10 dígitos que comiencen con 09"
                            required>
+                    <small>Ingresa un número de celular de 10 dígitos que comience con 09.</small>
                 </fieldset>
 
                 <fieldset>
@@ -219,6 +222,7 @@
 
                     <label for="fecha">Fecha:</label>
                     <input type="date" id="fecha" name="fecha" required>
+                    <small>Selecciona hoy o una fecha futura para tu pedido.</small>
 
                     <label for="comentarios">Comentarios:</label>
                     <textarea id="comentarios" name="comentarios"

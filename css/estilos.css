@@ -202,6 +202,17 @@ label {
     margin: 5px 0;
 }
 
+
+/* Texto de ayuda del formulario */
+small {
+    display: block;
+    margin-top: -8px;
+    margin-bottom: 12px;
+    color: var(--color-texto);
+    font-size: 0.9rem;
+}
+
+
 input:not([type="radio"]):not([type="checkbox"]),
 select,
 textarea {
